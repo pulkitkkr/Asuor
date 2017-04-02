@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page7">
+    <ion-content style="background-image: url('img/bg.png');
+    background-repeat: repeat;" overflow-scroll="true" padding="true" scroll="false" class="has-header">
+		  <img class="animated fadeInUp" width=100% src="img/logo.png"/>
+     
+       <br/>
+        <form class="list animated fadeInUp">
+            <ion-list>
+                <label class="item item-input">
+                    <span  class="input-label">Email</span>
+                    <input ng-model="userId" type="email" placeholder="abc@xyz.com">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input ng-model="userPass" type="password" placeholder="Password">
+                </label>
+            </ion-list>
+			<center>
+				<a  id="login-button1" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block" ng-click="EnterASUOR(userId,userPass)">Log in</a>&nbsp;&nbsp;
+				<a ui-sref="signUp" id="login-button4" style="border-radius:15px 15px 15px 15px;" class="button button-positive  button-block button-outline">Sign Up</a>
+			</center>
+	   </form>
+    </ion-content>
+</ion-view>
